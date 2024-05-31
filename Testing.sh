@@ -1,7 +1,7 @@
 yad --center --info --text="Select a Python version..." \
 --button="Python 3.12":0 --button="Python 3.11":1 --button="Python 3.10":2 --button="Python 3.9":3 --button="Python 3.13":4 --button="Python 3.14":5 --button="Python 2.7":6 \
 --title="Python" --timeout=30 --timeout-indicator=bottom \
---image=python3 --borders=6 --skip-taskbar
+--image=python3 --borders=12 --skip-taskbar
 RETURN=$?
 if [[ $RETURN -eq 0 ]]; then
     idle-python3.12;
